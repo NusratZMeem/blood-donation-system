@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation System | Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color:white;text-decoration:none;">BloodBank</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search_blood.html">Search blood</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register_donor.html">Register</a></li>
+                            </ul>
+        </nav>
+    </header>
+
+    <main>
+                
+        <!-- Donor Dashboard Summary (If logged in as Donor) -->
+        
+        <section class="hero" style="background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://images.unsplash.com/photo-1615461066841-6116ecaaba7f?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; border-radius: 12px; margin-bottom: 2rem;">
+            <h2>Give Blood, Save Lives</h2>
+            <p>Join our community of lifesavers. Whether you are looking to donate blood or request it for a patient in need, our platform connects you instantly.</p>
+            <div style="margin-top: 2rem;">
+                                    <a href="register_donor.html" class="btn btn-primary">Become a Donor</a>
+                                <a href="search_blood.html" class="btn btn-secondary" style="margin-left: 1rem;">Search for Blood</a>
+            </div>
+        </section>
+
+        <!-- New Section: Available Blood Donors (Public) -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="color: var(--primary-red); margin-bottom: 1.5rem; text-align: center;">Available Blood Donors</h2>
+                            <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+                                            <div class="card" style="padding: 1.5rem; border-left: 5px solid var(--primary-red);">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <h4 style="margin:0;">Nusrat meem</h4>
+                                <span class="badge badge-fulfilled">B+</span>
+                            </div>
+                            <p style="margin: 0.5rem 0; color: var(--text-light); font-size: 0.9rem;">
+                                ?? Dhaka                            </p>
+                            <div style="margin-top: 1rem;">
+                                <form action="request_blood.html" method="GET">
+                                    <input type="hidden" name="donor_id" value="3">
+                                    <input type="hidden" name="blood_group" value="B+">
+                                    <button type="submit" class="btn btn-secondary" style="width:100%; font-size: 0.85rem; padding: 0.5rem;">Request Blood</button>
+                                </form>
+                            </div>
+                        </div>
+                                    </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="search_blood.html" style="color: var(--primary-red); text-decoration: none; font-weight: 600;">View all donors ?</a>
+                </div>
+                    </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>For Donors</h3>
+                <p>Register to become a blood donor, manage your availability, and track your past donations seamlessly.</p>
+                <a href="register_donor.html" class="btn btn-secondary">Join Now</a>
+            </div>
+            <div class="card">
+                <h3>For Patients & Hospitals</h3>
+                <p>Submit urgent blood requests and find matching donors by blood group and location instantly.</p>
+                <a href="search_blood.html" class="btn btn-secondary">Search Donors</a>
+            </div>
+            <div class="card">
+                <h3>Hospital Network</h3>
+                <p>View participating hospitals and blood banks in our network and partner with us to save more lives.</p>
+                <a href="hospital_info.html" class="btn btn-secondary">View Hospitals</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blood Donation System. All Rights Reserved. | <a href="admin_dashboard.html" style="color:inherit; text-decoration:none;">Admin</a></p>
+    </footer>
+</body>
+</html>
+
