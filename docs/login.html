@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation System | Login</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .login-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 80px); /* header height approx */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color:white;text-decoration:none;">BloodBank</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search_blood.html">Search Blood</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-wrapper">
+        <div class="form-container" style="width: 100%; max-width: 450px;">
+            <h2 style="color: var(--primary-red); margin-bottom: 2rem; text-align: center;">Welcome Back</h2>
+            
+            
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Login</button>
+            </form>
+            
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light);">
+                Don't have an account? <a href="register_donor.html" style="color: var(--primary-red);">Register here</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
+
